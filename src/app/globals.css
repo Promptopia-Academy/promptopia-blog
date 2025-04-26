@@ -1,44 +1,48 @@
 @import "tailwindcss";
 
 @layer base {
-  :root {
-    --font-sans: var(--font-lato);
-    --background: oklch(1 0 none); /* White, was HSL 0 0% 100% */
-    --foreground: oklch(0.245 0 0); /* Near black, was HSL 224 71.4% 4.1% */
-    --card: oklch(1 0 0); /* White */
-    --card-foreground: oklch(0.245 0 0); /* Near black */
-    --popover: oklch(1 0 0); /* White */
-    --popover-foreground: oklch(0.245 0 0); /* Near black */
-    --primary: oklch(60.59% 0.115 93.5); /* Purple, was HSL 262.1 83.3% 57.8% */
-    --primary-foreground: oklch(
-      0.985 0 0
-    ); /* Light gray, was HSL 210 20% 98% */
-    --secondary: oklch(0.97 0 0); /* Light gray, was HSL 220 14.3% 95.9% */
-    --secondary-foreground: oklch(
-      0.205 0 0
-    ); /* Dark gray, was HSL 220.9 39.3% 11% */
-    --muted: oklch(0.97 0 0); /* Light gray */
-    --muted-foreground: oklch(0.556 0 0); /* Mid gray, was HSL 220 8.9% 46.1% */
-    --accent: oklch(0.97 0 0); /* Light gray */
-    --accent-foreground: oklch(0.205 0 0); /* Dark gray */
-    --destructive: oklch(0.65 0.15 30); /* Red, was HSL 0 84.2% 60.2% */
-    --destructive-foreground: oklch(0.985 0 0); /* Light gray */
-    --border: oklch(0.922 0 0); /* Light gray, was HSL 220 13% 91% */
-    --input: oklch(0.922 0 0); /* Light gray */
-    --ring: oklch(0.708 0 0); /* Purple, simplified */
-    --radius: 0.5rem;
-    --chart-1: oklch(0.646 0.222 41.116); /* Provided OKLCH value */
-    --chart-2: oklch(0.6 0.118 184.704); /* Provided OKLCH value */
-    --chart-3: oklch(0.398 0.07 227.392); /* Provided OKLCH value */
-    --chart-4: oklch(0.828 0.189 84.429); /* Provided OKLCH value */
-    --chart-5: oklch(0.769 0.188 70.08); /* Provided OKLCH value */
-    --sidebar-background: oklch(0.985 0 0); /* Near white, was HSL 0 0% 98% */
-    --sidebar-foreground: oklch(0.145 0 0); /* Dark gray, simplified */
-    --sidebar-primary: oklch(0.205 0 0); /* Dark gray, was HSL 240 5.9% 10% */
-    --sidebar-primary-foreground: oklch(0.985 0 0); /* Near white */
-    --sidebar-accent: oklch(0.97 0 0); /* Light gray, was HSL 240 4.8% 95.9% */
-    --sidebar-accent-foreground: oklch(0.205 0 0); /* Dark gray */
-    --sidebar-border: oklch(0.922 0 0); /* Light gray */
-    --sidebar-ring: oklch(0.708 0 0); /* Purple, simplified */
-  }
+}
+
+@theme {
+  --color-background: oklch(1 0 none);
+  --color-foreground: oklch(0 0 none);
+  --color-accent: oklch(0.91 0.1414 174.34); /* Light gray */
+  --color-accent-foreground: oklch(0.205 0 0); /* Dark gray */
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.245 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.245 0 0);
+  --color-primary: oklch(60.59% 0.115 93.5);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.92 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.97 0 0); /* Light gray */
+  --color-muted-foreground: oklch(
+    0.556 0 0
+  ); /* Mid gray, was HSL 220 8.9% 46.1% */
+  --color-destructive: oklch(0.65 0.15 30); /* Red, was HSL 0 84.2% 60.2% */
+  --color-destructive-foreground: oklch(0.985 0 0); /* Light gray */
+  --color-border: oklch(0.922 0 0); /* Light gray, was HSL 220 13% 91% */
+  --color-input: oklch(0.922 0 0); /* Light gray */
+  --color-ring: oklch(0.708 0 0); /* Purple, simplified */
+  --color-radius: 0.5rem;
+  --color-chart-1: oklch(0.646 0.222 41.116); /* Provided OKLCH value */
+  --color-chart-2: oklch(0.6 0.118 184.704); /* Provided OKLCH value */
+  --color-chart-3: oklch(0.398 0.07 227.392); /* Provided OKLCH value */
+  --color-chart-4: oklch(0.828 0.189 84.429); /* Provided OKLCH value */
+  --color-chart-5: oklch(0.769 0.188 70.08); /* Provided OKLCH value */
+  --color-sidebar-background: oklch(
+    0.985 0 0
+  ); /* Near white, was HSL 0 0% 98% */
+  --color-sidebar-foreground: oklch(0.145 0 0); /* Dark gray, simplified */
+  --color-sidebar-primary: oklch(
+    0.205 0 0
+  ); /* Dark gray, was HSL 240 5.9% 10% */
+  --color-sidebar-primary-foreground: oklch(0.985 0 0); /* Near white */
+  --color-sidebar-accent: oklch(
+    0.97 0 0
+  ); /* Light gray, was HSL 240 4.8% 95.9% */
+  --color-sidebar-accent-foreground: oklch(0.205 0 0); /* Dark gray */
+  --color-sidebar-border: oklch(0.922 0 0); /* Light gray */
+  --color-sidebar-ring: oklch(0.708 0 0); /* Purple, simplified */
 }
