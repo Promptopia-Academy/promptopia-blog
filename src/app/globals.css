@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-sans: var(--font-lato);
+    --background: oklch(1 0 none); /* White, was HSL 0 0% 100% */
+    --foreground: oklch(0.245 0 0); /* Near black, was HSL 224 71.4% 4.1% */
+    --card: oklch(1 0 0); /* White */
+    --card-foreground: oklch(0.245 0 0); /* Near black */
+    --popover: oklch(1 0 0); /* White */
+    --popover-foreground: oklch(0.245 0 0); /* Near black */
+    --primary: oklch(60.59% 0.115 93.5); /* Purple, was HSL 262.1 83.3% 57.8% */
+    --primary-foreground: oklch(
+      0.985 0 0
+    ); /* Light gray, was HSL 210 20% 98% */
+    --secondary: oklch(0.97 0 0); /* Light gray, was HSL 220 14.3% 95.9% */
+    --secondary-foreground: oklch(
+      0.205 0 0
+    ); /* Dark gray, was HSL 220.9 39.3% 11% */
+    --muted: oklch(0.97 0 0); /* Light gray */
+    --muted-foreground: oklch(0.556 0 0); /* Mid gray, was HSL 220 8.9% 46.1% */
+    --accent: oklch(0.97 0 0); /* Light gray */
+    --accent-foreground: oklch(0.205 0 0); /* Dark gray */
+    --destructive: oklch(0.65 0.15 30); /* Red, was HSL 0 84.2% 60.2% */
+    --destructive-foreground: oklch(0.985 0 0); /* Light gray */
+    --border: oklch(0.922 0 0); /* Light gray, was HSL 220 13% 91% */
+    --input: oklch(0.922 0 0); /* Light gray */
+    --ring: oklch(0.708 0 0); /* Purple, simplified */
+    --radius: 0.5rem;
+    --chart-1: oklch(0.646 0.222 41.116); /* Provided OKLCH value */
+    --chart-2: oklch(0.6 0.118 184.704); /* Provided OKLCH value */
+    --chart-3: oklch(0.398 0.07 227.392); /* Provided OKLCH value */
+    --chart-4: oklch(0.828 0.189 84.429); /* Provided OKLCH value */
+    --chart-5: oklch(0.769 0.188 70.08); /* Provided OKLCH value */
+    --sidebar-background: oklch(0.985 0 0); /* Near white, was HSL 0 0% 98% */
+    --sidebar-foreground: oklch(0.145 0 0); /* Dark gray, simplified */
+    --sidebar-primary: oklch(0.205 0 0); /* Dark gray, was HSL 240 5.9% 10% */
+    --sidebar-primary-foreground: oklch(0.985 0 0); /* Near white */
+    --sidebar-accent: oklch(0.97 0 0); /* Light gray, was HSL 240 4.8% 95.9% */
+    --sidebar-accent-foreground: oklch(0.205 0 0); /* Dark gray */
+    --sidebar-border: oklch(0.922 0 0); /* Light gray */
+    --sidebar-ring: oklch(0.708 0 0); /* Purple, simplified */
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
