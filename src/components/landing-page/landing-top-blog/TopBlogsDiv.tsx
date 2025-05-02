@@ -4,11 +4,11 @@ import TopBlogCard from "./TopBlogCard";
 
 const TopBlogsDiv = () => {
   return (
-    <div className="h-[900px] flex flex-col overflow-x-scroll justify-start items-start gap-7 max-w-7xl my-10 py-5 hide-scrollbar">
-      <h1 className="text-[#141414] text-4xl font-medium">Top blog</h1>
-      <div className="flex overflow-hidden gap-8 ">
+    <div className="flex flex-col justify-center items-center gap-16 hide-scrollbar">
+      <h1 className="text-[#000000] text-5xl font-semibold">We are talking to you about the future.</h1>
+      <div className="flex overflow-x-scroll overflow-hidden gap-6 hide-scrollbar max-w-7xl">
         {TOP_BLOGS.map((f) => (
-          <TopBlogCard Des={f.Des} Image={f.Image} Title={f.Title} key={f.Id} />
+          <TopBlogCard Des={f.Des} Image={f.Image} Title={f.Title} key={f.Id} Author={f.Author}/>
         ))}
       </div>
     </div>

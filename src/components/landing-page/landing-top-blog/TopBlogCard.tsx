@@ -1,13 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { MoveRight, UserCircle2Icon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -16,34 +15,41 @@ interface ITopBlogCardProps {
   Title: string;
   Des: string;
   Id?: number;
+  Author: string;
 }
 
-const TopBlogCard: React.FC<ITopBlogCardProps> = ({ Image, Title, Des }) => {
+const TopBlogCard: React.FC<ITopBlogCardProps> = ({
+  Image,
+  Title,
+  Des,
+  Author,
+}) => {
   return (
     <Link href={"/"}>
-      <Card className="w-[368px] h-[770px] bg-[#BCD8FF] px-9 pt-7 rounded-2xl flex flex-col items-center justify-center gap-4 hover:scale-97 duration-300 transition-all">
-        <CardHeader className="rounded-2xl w-[280px] h-[470px]">
+      <Card className="w-[383px] h-[454x] shadow-none p-0 bg-transparent border-none flex flex-col items-center justify-center gap-2 hover:scale-97 duration-300 transition-all">
+        <CardHeader className="rounded-[12px]">
           <img
             src={Image}
             alt={Title}
-            className="w-[280px] h-[470px] object-fill rounded-2xl"
+            className="w-[383px] h-[255px] object-fill rounded-[12px]"
           />
         </CardHeader>
-        <CardContent className="mb-2.5">
-          <div className="flex justify-between items-center mb-4">
-            <CardTitle className="font-medium text-4xl">{Title}</CardTitle>
-            <p>⭐⭐</p>
-          </div>
-          <CardDescription className="text-2xl font-normal">
+        <CardContent className="w-[383px] h-[199px] rounded-[12px] bg-[#DDDDDD] px-4 py-3">
+          <CardTitle className="font-bold text-[32px]">{Title}</CardTitle>
+          <CardDescription className="text-2xl font-normal text-black flex mb-2 items-end">
             {Des}
+            <span>
+              <MoveRight />
+            </span>
           </CardDescription>
+          <div className="flex justify-between items-center">
+            <div className="flex items-center justify-start gap-2.5">
+                <UserCircle2Icon />
+              <p className="text-base text-black font-normal">{Author}</p>
+            </div>
+            <p className="font-medium text-base">200👍 120px👎</p>
+          </div>
         </CardContent>
-        <CardFooter className="flex justify-between items-center gap-2">
-          <p className="font-medium text-base">200👍 120px👎</p>
-          <Button className="text-base cursor-pointer font-light text-black bg-[#64FFDA] w-[120px] h-[34px] rounded-2xl hover:bg-[#25B492] hover:shadow-md transition-all duration-400 ease-in-out">
-            Read more...
-          </Button>
-        </CardFooter>
       </Card>
     </Link>
   );
