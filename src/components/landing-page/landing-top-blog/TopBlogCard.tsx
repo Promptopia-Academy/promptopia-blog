@@ -7,11 +7,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { MoveRight, UserCircle2Icon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 interface ITopBlogCardProps {
-  Image: string;
+  Images: string;
   Title: string;
   Des: string;
   Id?: number;
@@ -19,7 +20,7 @@ interface ITopBlogCardProps {
 }
 
 const TopBlogCard: React.FC<ITopBlogCardProps> = ({
-  Image,
+  Images,
   Title,
   Des,
   Author,
@@ -27,10 +28,12 @@ const TopBlogCard: React.FC<ITopBlogCardProps> = ({
   return (
     <Link href={"/"}>
       <Card className="w-[383px] h-[454px] shadow-none p-0 bg-transparent border-none flex flex-col items-center justify-center gap-2 hover:scale-97 duration-300 transition-all">
-        <CardHeader className="rounded-[12px]">
-          <img
-            src={Image}
+        <CardHeader className="rounded-[12px] w-full h-full p-0 m-0">
+          <Image
+            src={Images}
             alt={Title}
+            width={383}
+            height={255}
             className="w-[383px] h-[255px] object-fill rounded-[12px]"
           />
         </CardHeader>
@@ -44,7 +47,7 @@ const TopBlogCard: React.FC<ITopBlogCardProps> = ({
           </CardDescription>
           <div className="flex justify-between items-center">
             <div className="flex items-center justify-start gap-2.5">
-                <UserCircle2Icon />
+              <UserCircle2Icon />
               <p className="text-base text-black font-normal">{Author}</p>
             </div>
             <p className="font-medium text-base">200👍 120px👎</p>

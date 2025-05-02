@@ -1,6 +1,6 @@
 export const TOP_BLOGS = [
   {
-    Image: "/TopBLogPics/Frame 20.jpg",
+    Image: "/TopBLogPics/Frame-20.jpg",
     Title: "Top blog",
     Des: "CodeStorm 2025: Riding the Digital Surge of Programming Innovation!",
     Id: 1,
