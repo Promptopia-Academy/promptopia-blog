@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroImages = () => {
   return (
-    <div className="flex gap-6 relative bg-[url(/layout/image-9.png)] w-full h-[37rem] bg-cover bg-right bg-no-repeat justify-end">
+    <div className="flex gap-6 relative bg-[url(/layout/image-9.png)] w-full h-[34rem] bg-cover bg-right bg-no-repeat justify-end mt-10">
       <div className="flex flex-col gap-3.5 items-end">
         <Image
           src={"/images/image1.png"}
