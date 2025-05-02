@@ -1,3 +1,5 @@
+import Categories from "@/components/categories/Categories";
+import Hero from "@/components/hero/Hero";
 import Header from "@/components/landing-page/landing-header/Header";
 
 export default function Home() {
@@ -5,6 +7,8 @@ export default function Home() {
     <>
       <header>
         <Header />
+        <Hero />
+        <Categories />
       </header>
     </>
   );
