@@ -26,7 +26,7 @@ const TopBlogCard: React.FC<ITopBlogCardProps> = ({
 }) => {
   return (
     <Link href={"/"}>
-      <Card className="w-[383px] h-[454x] shadow-none p-0 bg-transparent border-none flex flex-col items-center justify-center gap-2 hover:scale-97 duration-300 transition-all">
+      <Card className="w-[383px] h-[454px] shadow-none p-0 bg-transparent border-none flex flex-col items-center justify-center gap-2 hover:scale-97 duration-300 transition-all">
         <CardHeader className="rounded-[12px]">
           <img
             src={Image}
