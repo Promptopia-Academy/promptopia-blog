@@ -1,5 +1,6 @@
 import React from "react";
 import HeroText from "./HeroText";
+import HeroImages from "./HeroImages";
 
 const Hero = () => {
   return (
@@ -7,7 +8,9 @@ const Hero = () => {
       <div className="mt-16">
         <HeroText />
       </div>
-      <div></div>
+      <div className="w-full">
+        <HeroImages />
+      </div>
     </div>
   );
 };
