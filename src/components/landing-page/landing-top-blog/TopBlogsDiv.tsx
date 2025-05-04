@@ -9,7 +9,7 @@ const TopBlogsDiv = () => {
       <h1 className="text-[#000000] text-5xl font-semibold">
         We are talking to you about the future.
       </h1>
-      <div className="flex flex-row items-center ml-auto gap-5 mb-5 mr-3">
+      <div className="flex items-center ml-auto gap-5 mb-5 mr-3">
         <p className="text-2xl">More</p>
         <Image src={"/icons/Right-1.svg"} alt="right" width={20} height={20} />
       </div>

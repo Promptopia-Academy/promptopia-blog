@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import {
   Card,
   CardContent,
@@ -55,7 +54,6 @@ const TopBlogCard: React.FC<ITopBlogCardProps> = ({
               </div>
               <p className="text-base text-foreground font-normal">{Author}</p>
             </div>
-            {/* <p className="font-medium text-base">200👍 120px👎</p> */}
             <div className="flex gap-4">
               <div className="flex gap-1">
                 <Image
