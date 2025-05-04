@@ -20,7 +20,7 @@ const Header = () => {
             objectFit="contain"
           />
         </div>
-        <Button className="bg-accent text-foreground w-40 h-12 text-2xl">
+        <Button className="bg-accent text-foreground w-40 h-12 text-2xl transition-all duration-400 cursor-pointer">
           Sign in
         </Button>
       </div>

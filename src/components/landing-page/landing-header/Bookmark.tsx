@@ -7,7 +7,7 @@ const Bookmark = () => {
   return (
     <div className="flex gap-8 items-center">
       {bookmarks.map((bookmarks, index) => (
-        <Link href="#" key={index} className="text-2xl font-normal">
+        <Link href="#" key={index} className="text-2xl font-normal hover:text-white hover:scale-105 transition-all duration-300">
           {bookmarks}
         </Link>
       ))}

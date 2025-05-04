@@ -8,7 +8,7 @@ const HeroText = () => {
       <p className="w-80 text-3xl font-light leading-9 mt-4">
         Lorem ipsum in adipiscing tincidunt.Lorem ipsum in adipiscing
       </p>
-      <Button className="bg-accent text-2xl font-normal text-foreground mt-8 w-52 h-12">
+      <Button className="bg-accent text-2xl font-normal text-foreground mt-8 w-52 h-12 transition-all duration-400 cursor-pointer">
         Get Started
       </Button>
     </div>
