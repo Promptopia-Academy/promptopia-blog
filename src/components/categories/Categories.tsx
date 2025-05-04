@@ -15,8 +15,8 @@ const Categories = () => {
           key={index}
           className={cn(
             active === item
-              ? "bg-chart-2 text-background text-2xl font-normal w-36 h-12"
-              : "bg-accent text-2xl font-normal text-foreground w-36 h-12"
+              ? "bg-chart-2 text-background text-2xl font-normal w-36 h-12 transition-all duration-400 cursor-pointer"
+              : "bg-accent text-2xl font-normal text-foreground w-36 h-12 transition-all duration-400 cursor-pointer"
           )}
           onClick={() => setActive(item)}
         >
