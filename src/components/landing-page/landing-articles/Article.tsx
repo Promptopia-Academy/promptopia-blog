@@ -16,7 +16,7 @@ const Article: React.FC<IArticleProps> = ({ Des, Images }) => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-between p-4">
           <h2 className="text-3xl font-light">{Des}</h2>
-          <button className="self-end bg-[#3F8EFC] text-white rounded-[12px] text-base font-light w-[120px] h-8">
+          <button className="self-end bg-[#3F8EFC] text-black rounded-[12px] text-base font-light w-[120px] h-8">
             Read more...
           </button>
         </div>
