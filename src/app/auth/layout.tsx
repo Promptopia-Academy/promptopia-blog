@@ -8,10 +8,15 @@ const layout = ({
 }>) => {
   return (
     <div className="flex justify-between items-center w-full h-full sm:flex-col">
-      <div className="w-full h-full">
-        <Image src={"/authPic/auth-pic.jpg"} alt="auth-pic" fill />
+      <div className="w-1/2 h-full sm:w-full">
+        <Image src={"/authPic/auth-pic.jpg"} alt="auth-pic"
+        style={{
+          width: '100%',
+          height: 'auto',
+          objectFit:"cover"
+        }}/>
       </div>
-      <div className="w-full h-full">{children}</div>
+      <div className="w-1/2 h-full sm:w-full">{children}</div>
     </div>
   );
 };
