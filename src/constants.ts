@@ -1,3 +1,5 @@
+import { SocialIcon } from "../Types";
+
 export const TOP_BLOGS = [
   {
     Image: "/TopBLogPics/Frame-20.jpg",
@@ -33,5 +35,28 @@ export const TOP_BLOGS = [
     Des: "CodeStorm 2025: Riding the Digital Surge of Programming Innovation!",
     Id: 5,
     Author: "Mr.Sadeghi",
+  },
+];
+
+export const SOCIAL_NETWORK_ICONS: SocialIcon[] = [
+  {
+    Icon: "/icons/github.svg",
+    Title: "github",
+    Href: "/",
+  },
+  {
+    Icon: "/icons/linkedin.svg",
+    Title: "linkedin",
+    Href: "/",
+  },
+  {
+    Icon: "/icons/instagram.svg",
+    Title: "instagram",
+    Href: "/",
+  },
+  {
+    Icon: "/icons/x.svg",
+    Title: "x",
+    Href: "/",
   },
 ];
