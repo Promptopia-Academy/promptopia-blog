@@ -3,16 +3,12 @@ import Hero from "@/components/hero/Hero";
 import BigArticle from "@/components/landing-page/articles/BigArticle";
 import MediumArticle from "@/components/landing-page/articles/MediumArticle";
 import SmallArticle from "@/components/landing-page/articles/SmallArticle";
-import Header from "@/components/landing-page/landing-header/Header";
 import TopBlogsDiv from "@/components/landing-page/landing-top-blog/TopBlogsDiv";
 import Poster from "@/components/landing-page/poster/Poster";
 
 export default function Home() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
       <main>
         <Hero />
         <Categories />
