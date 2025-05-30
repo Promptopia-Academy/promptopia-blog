@@ -28,17 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header>
-        <Header />
-      </header>
       <body
-        className={`${roboto.variable} ${geistMono.variable} font-['Roboto'] antialiased bg-background px-[8%] `}
+        className={`${roboto.variable} ${geistMono.variable} font-['Roboto'] antialiased bg-background`}
       >
+        <Header />
         {children}
-      </body>
-      <footer>
         <Footer />
-      </footer>
+      </body>
     </html>
   );
 }
