@@ -8,7 +8,7 @@ interface IBigArticleProps {
 const BigArticle: React.FC<IBigArticleProps> = ({ title }) => {
   return (
     <div
-      className={`w-[536px] h-[475px] bg-[url(/images/large-article.png)] bg-cover bg-center rounded-2xl flex flex-col justify-between mt-16`}
+      className={`w-[536px] h-[475px] bg-[url(/images/large-article.png)] bg-cover bg-center rounded-2xl flex flex-col justify-between `}
     >
       <p className="m-5 text-3xl leading-9 w-96 text-white font-light font-['Roboto']">
         {title}
