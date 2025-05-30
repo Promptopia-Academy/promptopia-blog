@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
-interface IMediumArticleProps {
+interface ISmallArticleProps {
   title: string;
 }
 
-const MediumArticle: React.FC<IMediumArticleProps> = ({ title }) => {
+const SmallArticle: React.FC<ISmallArticleProps> = ({ title }) => {
   return (
-    <div className="w-[343px] h-[475px] bg-[url(/images/middle-article.png)] bg-cover bg-center rounded-2xl flex flex-col justify-between">
+    <div className="w-64 h-[226px] bg-[url(/images/small-article.png)] bg-cover bg-center rounded-2xl flex flex-col justify-between">
       <p className="m-5 text-3xl leading-9 w-72 text-white font-light font-['Roboto']">
         {title}
       </p>
@@ -18,4 +18,4 @@ const MediumArticle: React.FC<IMediumArticleProps> = ({ title }) => {
   );
 };
 
-export default MediumArticle;
+export default SmallArticle;
