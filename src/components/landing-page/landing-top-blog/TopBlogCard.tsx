@@ -25,11 +25,16 @@ const TopBlogCard: React.FC<ITopBlogCardProps> = ({
   Author,
 }) => {
   return (
-    <Link href={"/"}>
-      <Card className="flex-shrink-0 w-96 h-[28.815rem] shadow-none p-0 bg-transparent border-none flex flex-col items-center justify-center gap-2 hover:scale-97 duration-300 transition-all">
+    <Link
+      href={"/"}
+      onMouseDown={(e) => e.stopPropagation()}
+      onTouchStart={(e) => e.stopPropagation()}
+      draggable={false}
+    >
+      <Card className="select-none cursor-pointer flex-shrink-0 w-96 h-[28.815rem] shadow-none p-0 bg-transparent border-none flex flex-col items-center justify-center gap-2 hover:scale-97 duration-300 transition-all">
         <CardHeader className="rounded-[12px] w-full h-full p-0 m-0">
           <div className="relative w-96 h-64 object-cover  rounded-2xl">
-            <Image src={Images} alt={Title} fill />
+            <Image src={Images} alt={Title} fill draggable={false} />
           </div>
         </CardHeader>
         <CardContent className="w-96 h-max rounded-2xl bg-card px-4 py-3">
@@ -46,6 +51,7 @@ const TopBlogCard: React.FC<ITopBlogCardProps> = ({
               width={20}
               height={20}
               className="mb-2.5"
+              draggable={false}
             />
           </div>
           <div className="flex justify-between items-center">
