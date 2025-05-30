@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/landing-page/landing-header/Header";
+import Footer from "@/components/footer/Footer";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -35,7 +36,9 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <footer>
         <Footer />
+      </footer>
     </html>
   );
 }
