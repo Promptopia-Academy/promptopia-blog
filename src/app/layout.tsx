@@ -3,6 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/landing-page/landing-header/Header";
+import Footer from "@/components/footer/Footer";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -28,12 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+
         className={`${roboto.variable} ${geistMono.variable} font-['Roboto'] antialiased bg-background  `}
       >
         <header className="px-[8%] absolute w-full">
           <Header />
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
