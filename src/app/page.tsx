@@ -9,7 +9,7 @@ import Poster from "@/components/landing-page/poster/Poster";
 export default function Home() {
   return (
     <>
-      <main className="px-[8%]">
+      <main className="px-[8%] pt-20">
         <Hero />
         <Categories />
         <TopBlogsDiv />
